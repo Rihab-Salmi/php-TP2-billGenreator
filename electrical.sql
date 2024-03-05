@@ -22,7 +22,7 @@ CREATE TABLE Consumption (
     month INT,
     year INT,
     value float,
-    image_meter BLOB,
+    image_meter VARCHAR(255),
     annomaly BOOLEAN,
     FOREIGN KEY (ID_Client) REFERENCES Client(ID_Client)
 );
